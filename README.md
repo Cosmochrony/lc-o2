@@ -1,44 +1,69 @@
-# Gravitational Time Dilation from Position-Dependent Spectral Budget (LC-O2)
+# Fibrewise Born-Infeld Capacity Lapse and Gravitational Time Dilation (LC-O2)
 
 This repository contains the source of the paper
-*Gravitational Time Dilation from Position-Dependent Spectral Budget:
-Non-Uniform Extension of the Temporal Residual Map*
-(LC-O2 of the Cosmochrony / spectral admissibility programme).
+*Fibrewise Born-Infeld Capacity Lapse and Gravitational Time Dilation
+(LC-O2 of the Lorentz Capacity Programme)*
+(`Beau2026lco2`).
+
+## Overview
+
+The paper **TempProj** (`Beau2026tp`) constructs the temporal residual map
+$\mathcal{P}_\tau^{\mathrm{Q5b}}$ in the homogeneous (flat-space) regime and proves uniqueness.
+The present paper (LC-O2) extends this construction to **non-homogeneous fibrewise regimes**,
+where a localised spectral occupancy $\epsilon(x)$ reduces the local BI capacity budget.
+
+## Main Result
+
+In a non-homogeneous configuration, the local BI capacity radius is
+$R(x)^2 = 1 - \epsilon(x)$.
+The fibrewise temporal residual map factorises canonically as:
+
+$$\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\,\Sigma^{\mathrm{tot}}(x,n)
+= R(x)\,\sqrt{f(x,n)\bigl(2 - f(x,n)\bigr)}$$
+
+where $f(x,n) = 1 - \beta(x,n)$ and $\beta(x,n)$ is the local normalised spatial mobility.
+
+**Gravitational time dilation** emerges as:
+
+$$\frac{d\tau}{dn}\bigg|_x = \frac{R(x)}{\gamma}$$
+
+The local capacity radius is linked to the metric by:
+
+$$R(x)^2 = -2\,g_{\tau\tau}(x)$$
+
+In the weak-field regime, $R(x) \approx 1 + \Phi_N(x)/c^2$, recovering the standard
+gravitational time dilation formula.
+
+## Key features
+
+- The homogeneous case ($R(x) \equiv 1$) reduces to TempProj as a corollary.
+- The local capacity radius $R(x)$ is identified metrically from Q5b/Q11; the remaining
+  open problem (LC-O2-O1) is to derive $R(x)$ directly from $\epsilon(x)$ without
+  importing the Einstein equations.
+- The factorisation $R(x) \times \sqrt{f(2-f)}$ cleanly separates local physics
+  from the universal normalised Lorentzian structure.
 
 ## Status
 
-**Work in progress** — skeleton only.
+- Fibrewise map construction: **structural**
+- Gravitational time dilation formula: **structural** (imports $g_{\tau\tau}$ from Gravity paper)
+- Open: derivation of $R(x)$ from $\epsilon(x)$ without Einstein equation (LC-O2-O1)
 
-## Open problem addressed
+## Position in the sub-programme
 
-LC-O2 is defined in the temporal-projection paper (`Beau2026tp`):
-
-> In non-uniform regimes, position-dependent modifications of the local spectral
-> budget encode gravitational time dilation (Remark 2 of `Beau2026n`).
-> The flat-space construction of `Beau2026tp` provides the baseline for this extension.
-
-## Intended contribution
-
-Extend the temporal residual map $\mathcal{P}_\tau^{\mathrm{Q5b}}$
-from the homogeneous case (uniform Born-Infeld budget) to position-dependent regimes:
-
-$$\Sigma_n^\tau(x) = \mathcal{P}_\tau^{\mathrm{Q5b}}(x)\,\Sigma_n^{\mathrm{tot}}(x)$$
-
-where the local budget varies with the effective position $x$ on
-$\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$.
-The ratio $\Sigma_n^\tau(x)/\Sigma_n^\tau(y)$ should recover the gravitational
-redshift factor between projected histories at $x$ and $y$,
-connecting to the IR Einstein response of the gravity paper (`Beau2026h`).
+```
+LorCap → TempProj → LCII
+```
 
 ## Dependencies
 
 | Paper | Role |
 |-------|------|
-| temporal-projection (`Beau2026tp`) | Flat-space baseline construction |
+| TempProj (`Beau2026tp`) | Flat-space baseline (homogeneous case) |
 | LorCap (`Beau2026n`) | Origin of LC-O2 open problem |
-| Q5b (`Beau2026q5b`) | Effective operator and co-metric |
+| Q5b (`Beau2026q5b`) | Effective operator, co-metric, Carnot geometry |
 | Q11 (`Beau2026q11`) | Co-metric completion $g^{\mu\nu} = 2\eta^{\mu\nu}$ |
-| Gravity/H (`Beau2026h`) | IR Einstein response — expected connection |
+| Gravity/H (`Beau2026h`) | IR Einstein response — provides $g_{\tau\tau}(x)$ |
 | BI (`Beau2026c`) | Born-Infeld admissibility budget |
 | Foundation (`Beau2026m`) | Structural axioms |
 
@@ -47,10 +72,22 @@ connecting to the IR Einstein response of the gravity paper (`Beau2026h`).
 ```
 lc-o2/
 ├── out/              # Compiled PDF
-├── tex/              # LaTeX source
+├── tex/
 │   ├── lc-o2.tex
 │   └── cosmochrony-bibliography.bib
 ├── compile.sh
 ├── zenodo.json
 └── README.md
 ```
+
+## Citation
+
+> J. Beau, *Fibrewise Born-Infeld Capacity Lapse and Gravitational Time Dilation*,
+> Preprint, 2026.
+
+## Acknowledgements
+
+Portions of the editorial refinement benefited from iterative interactions with
+large language models used as analytical assistants.
+All claims, interpretations, and final formulations remain the sole
+responsibility of the author.
