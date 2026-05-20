@@ -1,0 +1,548 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage{doi}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Fibrewise Born--Infeld Capacity Lapse\\
+and Gravitational Time Dilation\\
+\large (LC-O2 of the Lorentz Capacity Programme)}
+\author{J\'er\^ome Beau\\
+\small Independent Researcher\\
+\small \texttt{jerome.beau@cosmochrony.org}}
+\date{2026}
+
+\begin{document}
+
+  \maketitle
+
+  \begin{abstract}
+    The note~\cite{Beau2026n} identifies the construction of a temporal residual
+    map~$\mathcal{P}_\tau^{\mathrm{Q5b}}$ as the remaining step needed to close the Lorentz
+    identification from O7 observables.
+    The paper~\cite{Beau2026tp} carries out this construction in the homogeneous regime and
+    establishes the uniqueness of the resulting map.
+    The present paper extends this construction to the non-homogeneous fibrewise regime;
+    the homogeneous case is recovered as Corollary~\ref{cor:homogeneous}.
+
+    In a non-homogeneous configuration a localised spectral occupancy $\epsilon(x)$
+    reduces the available BI capacity budget at each point $x$ to a local radius
+    $R(x)^2 = 1-\epsilon(x)$.
+    The Weil filling law and the Lorentzian splitting are unchanged.
+    A fibre-by-fibre uniqueness argument forces the
+    \emph{fibrewise} temporal residual map:
+    \[
+      \mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\Sigma^{\mathrm{tot}}(x,n)
+      \;=\; R(x)\,\sqrt{f(x,n)\bigl(2-f(x,n)\bigr)},
+    \]
+    where $f(x,n) = 1-\beta(x,n)$ and $\beta(x,n)$ is the local normalised spatial
+    mobility.
+    Gravitational time dilation is identified as the position-dependence of the temporal
+    residual capacity:
+    \[
+      \frac{d\tau}{dn}\bigg|_x = R(x)\,\sqrt{1-\beta^2} = \frac{R(x)}{\gamma}.
+    \]
+    The local capacity radius is identified metrically as
+    $R(x)^2 = -2\,g_{\tau\tau}(x)$,
+    where $g_{\tau\tau}(x)$ is the inverse metric temporal component
+    and the factor of $2$ comes from the flat-space reference $g_{\tau\tau}^\infty = -1/2$
+    (Q11~\cite{Beau2026q11}).
+    In the weak-field regime, the Newtonian profile of $g_{\tau\tau}(x)$ established
+    in~\cite{Beau2026h} gives $R(x) \approx 1 + \Phi_N(x)/c^2$, recovering
+    gravitational time dilation as a consequence of the local BI capacity budget.
+    The open spectral problem is to derive $R(x)$ directly from the local occupancy
+    $\epsilon(x)$ without importing the Einstein equations (LC-O2-O1).
+
+    The purpose of this note is not to rederive the Einstein equation.
+    The infrared Einstein response is supplied by the renormalized spectral entropy
+    functional of~\cite{Beau2026h}.
+    The purpose is instead to identify the local kinematic meaning of gravitational time
+    dilation in the capacity-flow language:
+    a non-uniform projected configuration reduces the local Born--Infeld capacity radius,
+    and the temporal residual map becomes fibrewise.
+  \end{abstract}
+
+  \noindent\textbf{Keywords.}
+  fibrewise Born--Infeld capacity, gravitational time dilation, capacity lapse,
+  local capacity radius, temporal residual map, Lorentz factor, non-homogeneous
+  effective geometry, emergent gravitation, Cosmochrony.
+
+  \newpage
+  \tableofcontents
+
+  \newpage
+
+  \section{Introduction}
+
+    \subsection{From homogeneous to fibrewise}
+
+      The note~\cite{Beau2026n} establishes, conditionally on the construction of
+      $\mathcal{P}_\tau^{\mathrm{Q5b}}$, that the core identity
+      \begin{equation}\label{eq:flat}
+        \mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}
+      \end{equation}
+      recovers $\Phi(\eta_n^\tau) = 1/\gamma$.
+      The paper~\cite{Beau2026tp} closes this construction unconditionally and proves
+      uniqueness of the homogeneous temporal residual map.
+      The present paper extends this to the fibrewise non-homogeneous regime;
+      the homogeneous case ($R(x)\equiv 1$) is recovered as
+      Corollary~\ref{cor:homogeneous}.
+      Gravitational time dilation, in this language, asks what happens when condition~(BI)
+      is modified: when the BI capacity budget is no longer a unit sphere everywhere but
+      a sphere of locally varying radius $R(x) \leq 1$.
+
+      This is the question addressed in the present paper.
+      We do not ask how the local budget variation $\epsilon(x) = 1-R(x)^2$ arises dynamically;
+      this is the domain of the renormalized spectral entropy functional of~\cite{Beau2026h},
+      which produces the Einstein tensor as the infrared-dominant response to a
+      metric-dependent spectral operator.
+      We ask instead: given a position-dependent local capacity radius $R(x)$, what is
+      the fibrewise extension of the temporal residual map, and what kinematic identity
+      does it produce?
+
+      The answer is structurally forced by the same uniqueness argument as in the homogeneous
+      case, applied fibrewise.
+
+    \subsection{Two choices and the canonical one}
+
+      When the BI budget becomes local, there are two natural ways to extend the observables.
+
+      \paragraph{Absolute capacity formulation.}
+        Keep $B(x,n)$ as an absolute fraction of capacity and replace the unit sphere by
+        $\bigl(F^\tau(x,n)\bigr)^2 + B(x,n)^2 = R(x)^2$.
+        The temporal residual is then $F^\tau(x,n) = \sqrt{R(x)^2-(1-f(x,n))^2}$,
+        defined only when $1-f(x,n) \leq R(x)$.
+        This mixes the local budget into the definition of $B(x,n)$ and loses the clean
+        separation between Lorentzian geometry and local scale.
+
+      \paragraph{Normalised capacity formulation (canonical).}
+        Write $B(x,n) = R(x)\,\beta(x,n)$ with $\beta(x,n) \in [0,1]$ the local normalised
+        spatial mobility, and $f(x,n) = 1-\beta(x,n)$.
+        The BI sphere in normalised variables is $(F^\tau)^2/R(x)^2 + \beta^2 = 1$, giving
+      \begin{equation}\label{eq:Ftau-local}
+        F^\tau(x,n) = R(x)\,\sqrt{1-\beta(x,n)^2}.
+        \end{equation}
+        The temporal residual map then factorises as
+      \begin{equation}\label{eq:factorisation}
+        \mathcal{P}_{\tau,x}^{\mathrm{Q5b}} \;\;\longleftrightarrow\;\;
+        \underbrace{R(x)}_{\text{local budget}}
+        \;\times\;
+        \underbrace{\sqrt{f(x,n)(2-f(x,n))}}_{\text{normalised Lorentzian geometry}}.
+        \end{equation}
+        This is the canonical formulation: $R(x)$ carries all the local physics, while
+        $\sqrt{f(2-f)}$ is the universal normalised Lorentzian structure
+        established in~\cite{Beau2026tp}.
+
+  \subsection{Main results and organisation}
+
+    Section~\ref{sec:setup} fixes the fibrewise extension of the capacity bundle.
+    Section~\ref{sec:spectral} defines $R(x)$ spectrally and identifies it with the metric.
+    Section~\ref{sec:main} states and proves the main theorem (fibrewise map).
+    Section~\ref{sec:timedil} extracts the gravitational time dilation formula.
+    Section~\ref{sec:weakfield} derives the weak-field limit from~\cite{Beau2026h}.
+    Section~\ref{sec:status} gives the logical status table.
+
+  \section{Fibrewise Capacity Bundle}\label{sec:setup}
+
+  \subsection{Notation}
+
+    Throughout, $(M, g)$ denotes the effective Lorentzian spacetime $M = \mathbb{R}_\tau
+  \times \mathrm{Heis}_3(\mathbb{R})$ with completed co-metric $g^{\mu\nu}(x)$.
+    In the homogeneous regime $g^{\mu\nu} = 2\eta^{\mu\nu}$ (Q11~\cite{Beau2026q11}).
+    In the non-homogeneous regime, $g^{\mu\nu}(x)$ is the effective co-metric determined
+    by the infrared Einstein response of~\cite{Beau2026h}; it is Lorentzian,
+    smooth in the weak-curvature regime, and reduces to $2\eta^{\mu\nu}$ at spatial infinity.
+
+    The flat-space Casimir value is $A_\tau^{\infty} = 2$ (Q11~\cite{Beau2026q11});
+    we use this as the reference value for the temporal component.
+
+  \subsection{Fibrewise BI sphere}
+
+    \begin{definition}[Local capacity radius]\label{def:radius}
+      Let $\epsilon(x) \geq 0$ be the \emph{local spectral occupancy} at $x \in M$:
+      the fraction of the BI capacity budget at $x$ already occupied by the local
+      projected configuration.
+      The \emph{local capacity radius} is
+      \begin{equation}\label{eq:radius}
+        R(x)^2 := 1 - \epsilon(x).
+      \end{equation}
+      In the homogeneous vacuum ($\epsilon \equiv 0$) one recovers $R(x) = 1$ and the
+      unit Born--Infeld sphere $(F_n^\tau)^2 + B_n^2 = 1$.
+    \end{definition}
+
+    \begin{definition}[Local normalised mobility and fibrewise filling law]\label{def:local}
+      The \emph{local normalised spatial mobility} $\beta(x,n) \in [0,1]$ is defined by
+      $B(x,n) = R(x)\,\beta(x,n)$, where $B(x,n)$ is the O7 spatial coverage fraction
+      at position $x$ and depth~$n$.
+      The \emph{local Weil filling variable} is $f(x,n) := 1 - \beta(x,n)$.
+    \end{definition}
+
+    \begin{remark}[Fibrewise filling law]
+The Weil factorization argument of~\cite{Beau2026n} (Corollary~1) gives
+$\Sigma_n^{\mathrm{tot}} = 1-B_n$ globally.
+In the fibrewise setting, the Weil representation is local to each BFS history,
+and the same argument yields
+\begin{equation}\label{eq:fillinglocal}
+  \Sigma^{\mathrm{tot}}(x,n) = R(x)\,\bigl(1-\beta(x,n)\bigr) = R(x)\,f(x,n),
+\end{equation}
+i.e.\ the total residual is the local budget fraction not yet reached by the spatial BFS.
+The linear filling law holds in the normalised variable $f = 1-\beta$:
+$\beta(x,n) + f(x,n) = 1$.
+    \end{remark}
+
+    \begin{definition}[Fibrewise capacity flow vector]\label{def:fibrevector}
+      The \emph{local capacity flow vector} at $(x,n)$ is
+      \[
+        \vec{F}(x,n) = F^\tau(x,n)\,\partial_\tau + \vec{F}^{\,\mathrm{spat}}(x,n)
+        \;\in\; T_x M,
+      \]
+      with $|\vec{F}^{\,\mathrm{spat}}(x,n)| = B(x,n)/dn = R(x)\beta(x,n)$.
+      The BI budget at $x$ places $\vec{F}(x,n)$ on the \emph{local BI sphere}:
+      \begin{equation}\label{eq:BIlocal}
+        \bigl(F^\tau(x,n)\bigr)^2 + \bigl(R(x)\beta(x,n)\bigr)^2 = R(x)^2.
+      \end{equation}
+    \end{definition}
+
+  \section{Spectral Occupancy and Metric Identification of $R(x)$}\label{sec:spectral}
+
+  \subsection{Local spectral occupancy from the admissibility data}
+
+    In the Cosmochrony framework, a localised mass-energy configuration is a projected
+    configuration that has depleted part of the BI capacity budget in a neighbourhood
+    of $x$.
+    More precisely, the admissible capacity budget at $x$ is the fraction of the spectral
+    space $\mathrm{Sym}^2(V_\rho)$ available for further projective transitions:
+    \begin{equation}\label{eq:epsilon}
+      \epsilon(x) = \frac{\sigma_{\mathrm{loc}}(x)}{\sigma_{\max}},
+    \end{equation}
+    where $\sigma_{\mathrm{loc}}(x)$ is the spectral capacity already occupied by the
+    configuration at~$x$ and $\sigma_{\max} = c_{\mathrm{BI}}^2$ is the maximal budget.
+    In the homogeneous vacuum, $\sigma_{\mathrm{loc}} \equiv 0$ and $R(x) = 1$.
+
+  \subsection{Identification with the effective co-metric}
+
+    The completed effective co-metric at $x$ is $g^{\mu\nu}(x)$.
+    Its temporal component satisfies $g^{\tau\tau}(x) < 0$ (Lorentzian signature).
+    The flat-space reference value is $g^{\tau\tau,\infty} = -A_\tau^\infty = -2$
+    (Q11~\cite{Beau2026q11}).
+
+    \begin{definition}[Metric capacity lapse]\label{def:lapse}
+      The \emph{metric capacity lapse} at $x$ is the ratio of the local temporal metric
+      component to its flat-space reference value:
+      \begin{equation}\label{eq:lapse}
+        R(x)^2 := \frac{g_{\tau\tau}(x)}{g_{\tau\tau}^\infty}
+        = -2\,g_{\tau\tau}(x),
+      \end{equation}
+      where $g_{\tau\tau}(x) = (g^{\tau\tau}(x))^{-1}$ is the inverse metric temporal component,
+      $g_{\tau\tau}^\infty = -1/2$ is its flat-space reference value (from $g^{\mu\nu}=2\eta^{\mu\nu}$,
+      Q11~\cite{Beau2026q11}), and the explicit form $-2g_{\tau\tau}(x)$ follows from
+      $g_{\tau\tau}^\infty = -1/2$.
+      In the homogeneous vacuum $g_{\tau\tau}^\infty = -1/2$, giving $R(\infty) = 1$.
+    \end{definition}
+
+    \begin{remark}[Postulated equivalence of the two definitions]\label{rem:equiv}
+      Definitions~\ref{def:radius} and~\ref{def:lapse} are postulated to describe the same
+      local capacity depletion in the Einstein regime.
+      Their direct equivalence from the admissibility data alone is not proved here;
+      establishing $\epsilon(x) = 1-R(x)^2 = 1+2g_{\tau\tau}(x)$ purely from spectral occupancy
+      is stated as open problem LC-O2-O1.
+      The metric formulation~\eqref{eq:lapse} is used for the weak-field derivation
+      in Section~\ref{sec:weakfield}.
+    \end{remark}
+
+  \section{Fibrewise Temporal Residual Map}\label{sec:main}
+
+  \subsection{The Lorentzian projector at $x$}
+
+    The local co-metric $g^{\mu\nu}(x)$ determines a Lorentzian temporal projector
+    $P_{\tau,x}$ on $T_x M$ by the same formula as in the homogeneous case
+    (\cite{Beau2026tp}, Section~4.1):
+    \begin{equation}\label{eq:Ptau-local}
+      P_{\tau,x}\,V = V^\tau\,\partial_\tau, \qquad V \in T_x M.
+    \end{equation}
+
+  \subsection{Fibrewise temporal residual map}
+
+    \begin{definition}[Fibrewise temporal residual map]\label{def:Ptau-local}
+      The \emph{fibrewise temporal residual map} $\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}$
+      is the composition:
+      \[
+        \mathcal{P}_{\tau,x}^{\mathrm{Q5b}} \colon
+        \Sigma^{\mathrm{tot}}(x,n)
+        \xrightarrow{\;\text{BI lift at }x\;}
+        \vec{F}(x,n)
+        \xrightarrow{\;P_{\tau,x}\;}
+        F^\tau(x,n)\,\partial_\tau
+        \xrightarrow{\;\text{magnitude}\;}
+        |F^\tau(x,n)|.
+      \]
+    \end{definition}
+
+  \subsection{Main theorem}
+
+    \begin{theorem}[Fibrewise temporal residual map]\label{thm:main}
+      Assume the Q5a continuum hypotheses~\cite{Beau2026q5a},
+      the spectral universality~\textup{[U]} proved in U1~\cite{Beau2026u1},
+      the fibrewise BI capacity lift of Definition~\ref{def:fibrevector},
+      and the local co-metric~$g^{\mu\nu}(x)$ of the effective Lorentzian geometry.
+      Then the fibrewise temporal residual map acts by
+      \begin{equation}\label{eq:main}
+        \mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\,\Sigma^{\mathrm{tot}}(x,n)
+        \;=\; R(x)\,\sqrt{f(x,n)\bigl(2-f(x,n)\bigr)},
+      \end{equation}
+      where $f(x,n) = 1-\beta(x,n)$, $R(x)$ is the local capacity radius~\eqref{eq:lapse},
+      and $\beta(x,n) \in [0,1]$ is the local normalised spatial mobility.
+
+      The quadratic residual law holds fibrewise:
+      \begin{equation}\label{eq:quadratic-local}
+        \bigl(R(x)\beta(x,n)\bigr)^2
+        + \bigl(\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\,\Sigma^{\mathrm{tot}}(x,n)\bigr)^2
+        = R(x)^2.
+      \end{equation}
+
+      Moreover, $\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}$ is the unique positive function satisfying
+      simultaneously:
+      \begin{itemize}
+        \item[\textup{(L$_x$)}] $\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\Sigma^{\mathrm{tot}}(x,n)
+        = |P_{\tau,x}\vec{F}(x,n)|$ (local Lorentzian projection);
+        \item[\textup{(BI$_x$)}] $B(x,n)^2 + (\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}
+        \Sigma^{\mathrm{tot}}(x,n))^2 = R(x)^2$ (local BI sphere~\eqref{eq:BIlocal});
+        \item[\textup{(W$_x$)}] $f(x,n) = 1-\beta(x,n)$ with
+        $B(x,n) = R(x)\beta(x,n)$ (fibrewise filling law~\eqref{eq:fillinglocal}).
+      \end{itemize}
+    \end{theorem}
+
+    \begin{proof}
+      \textbf{Explicit formula.}
+      From~(BI$_x$): $(F^\tau)^2 = R(x)^2 - B(x,n)^2 = R(x)^2 - R(x)^2\beta^2
+      = R(x)^2(1-\beta^2)$.
+      Hence $|F^\tau| = R(x)\sqrt{1-\beta^2}$.
+      By~(W$_x$): $\beta = 1-f$, so $1-\beta^2 = 1-(1-f)^2 = f(2-f)$.
+      Therefore
+      \[
+        \mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\Sigma^{\mathrm{tot}}(x,n)
+        = R(x)\sqrt{f(x,n)(2-f(x,n))}.
+      \]
+      Equation~\eqref{eq:quadratic-local} follows: $R^2\beta^2 + R^2(1-\beta^2) = R^2$.
+
+      \textbf{Uniqueness.}
+      Let $\psi_x(f)$ satisfy (L$_x$), (BI$_x$), (W$_x$).
+      From (W$_x$): $B(x,n) = R(x)(1-f)$.
+      Substituting into (BI$_x$): $R(x)^2(1-f)^2 + \psi_x(f)^2 = R(x)^2$, giving
+      $\psi_x(f) = R(x)\sqrt{f(2-f)}$.
+      The positive branch is uniquely forced.
+
+      \textbf{Factorisation.}
+      The formula $R(x)\sqrt{f(2-f)}$ separates into a local factor $R(x)$ depending only
+      on position and a universal factor $\sqrt{f(2-f)}$ which is identical to the
+      homogeneous case of~\cite{Beau2026tp}.
+      This factorisation~\eqref{eq:factorisation} is not postulated; it follows from the
+      normalised-capacity definition of $\beta$.
+    \end{proof}
+
+    \begin{corollary}[Homogeneous case]\label{cor:homogeneous}
+      Setting $R(x) \equiv 1$ (vacuum, $\epsilon \equiv 0$) in Theorem~\ref{thm:main}
+      recovers the flat-space result of~\cite{Beau2026tp}:
+      \[
+        \mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2},
+        \qquad
+        B_n^2 + \bigl(\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}}\bigr)^2 = 1.
+      \]
+    \end{corollary}
+
+    \begin{proof}
+      Immediate from Theorem~\ref{thm:main} with $R\equiv 1$:
+      $1\cdot\sqrt{f(2-f)} = \sqrt{(1-B_n)(1+B_n)} = \sqrt{1-B_n^2}$.
+    \end{proof}
+
+  \section{Gravitational Time Dilation}\label{sec:timedil}
+
+  \begin{corollary}[Fibrewise Lorentz factor and gravitational time dilation]\label{cor:timedil}
+    Under the hypotheses of Theorem~\ref{thm:main}, the fibrewise temporally projected
+    saturation ratio is
+    \begin{equation}\label{eq:eta-local}
+      \eta_x^\tau := \frac{B(x,n)}{\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\Sigma^{\mathrm{tot}}(x,n)}
+      = \frac{R(x)\beta}{ R(x)\sqrt{1-\beta^2}} = \beta\gamma,
+    \end{equation}
+    independent of $R(x)$, where $\gamma = (1-\beta^2)^{-1/2}$.
+    Consequently $\Phi(\eta_x^\tau) = 1/\gamma$ as in the homogeneous case.
+
+    The temporal residual per unit cascade depth at position $x$ is
+    \begin{equation}\label{eq:timedilation}
+      \frac{d\tau}{dn}\bigg|_x
+      = |F^\tau(x,n)| = R(x)\,\frac{1}{\gamma}
+      = \frac{R(x)}{\gamma}.
+    \end{equation}
+    Gravitational time dilation is the factor $R(x) \leq 1$ multiplying the special-relativistic
+    dilation $1/\gamma$:
+    \begin{equation}\label{eq:ratio}
+      \frac{(d\tau/dn)|_x}{(d\tau/dn)|_\infty}
+      = \frac{R(x)/\gamma}{1/\gamma} = R(x).
+    \end{equation}
+    Near a massive body $R(x) < 1$, and clocks at position $x$ run slower than clocks at
+    infinity by the factor $R(x)$.
+  \end{corollary}
+
+  \begin{proof}
+    The ratio $\eta_x^\tau$ in~\eqref{eq:eta-local} cancels $R(x)$ in numerator and
+    denominator.
+    Equation~\eqref{eq:timedilation} is $|F^\tau| = R(x)\sqrt{1-\beta^2} = R(x)/\gamma$.
+    Equation~\eqref{eq:ratio} follows by comparison with the flat-space value $R(\infty) = 1$.
+  \end{proof}
+
+  \begin{remark}[Light cone at $x$]\label{rem:lightcone}
+    $\beta \to 1$ (maximal spatial mobility) forces $F^\tau \to 0$ for any $R(x) > 0$:
+    the light cone condition is local and independent of the gravitational field.
+    At $x$ with $R(x) = 0$ (if such a point existed), all temporal capacity is exhausted
+    by the local configuration; this would correspond to a horizon-like saturation locus
+    or to a breakdown of the effective metric description.
+  \end{remark}
+
+  \section{Weak-Field Limit}\label{sec:weakfield}
+
+  \subsection{Connecting $R(x)$ to $g_{\tau\tau}(x)$}
+
+    From Definition~\ref{def:lapse}: $R(x)^2 = -2\,g_{\tau\tau}(x)$.
+    The effective co-metric $g^{\mu\nu}(x)$ is determined by the infrared Einstein response
+    of~\cite{Beau2026h}: the renormalized spectral entropy variation gives
+    $\delta S^\mathrm{ren}_\Pi/\delta g^{\mu\nu} \propto G_{\mu\nu}$, leading to the
+    effective Einstein equations.
+
+    In the static weak-field (Newtonian) regime, the Einstein equations give
+    \begin{equation}\label{eq:gtt}
+      g_{\tau\tau}(x) \;\approx\; -\tfrac{1}{2}\Bigl(1+\frac{2\Phi_N(x)}{c^2}\Bigr),
+    \end{equation}
+    where $\Phi_N(x)$ is the Newtonian potential satisfying $\nabla^2\Phi_N = 4\pi G_N \rho$.
+    The $1/r$ profile of $\Phi_N$ arises as the Green function of the Laplace-type
+    operator $A_g$ of~\cite{Beau2026h}: this is the same mechanism as the Newtonian
+    interaction emerging from the spectral resolvent (Section~2.3 of~\cite{Beau2026h}).
+
+  \subsection{Weak-field result}
+
+    \begin{corollary}[Weak-field gravitational time dilation]\label{cor:weakfield}
+      Under the hypotheses of Theorem~\ref{thm:main} and in the weak-field regime
+      $|\Phi_N(x)| \ll c^2$, the local capacity radius satisfies
+      \begin{equation}\label{eq:Rweak}
+        R(x) = \sqrt{-2\,g_{\tau\tau}(x)} \;\approx\; 1+\frac{\Phi_N(x)}{c^2},
+      \end{equation}
+      and the gravitational time dilation formula~\eqref{eq:timedilation} becomes
+      \begin{equation}\label{eq:timedilation-weak}
+        \frac{d\tau}{dn}\bigg|_x
+        \;\approx\; \Bigl(1+\frac{\Phi_N(x)}{c^2}\Bigr)\,\frac{1}{\gamma},
+      \end{equation}
+      in agreement with the standard result of general relativity at leading weak-field order.
+    \end{corollary}
+
+    \begin{proof}
+      In the Q5b/Q11 convention ($g^{\mu\nu} = 2\eta^{\mu\nu}$), the flat-space inverse metric
+      component is $g_{\tau\tau}^\infty = -1/2$.
+      The weak-field Einstein equations of~\cite{Beau2026h} give, for a static Newtonian potential,
+      $g_{\tau\tau}(x) \approx -\frac{1}{2}\bigl(1 + 2\Phi_N(x)/c^2\bigr)$.
+      Substituting into~\eqref{eq:lapse}:
+      \[
+        R(x)^2 = -2\,g_{\tau\tau}(x)
+        = -2 \cdot \Bigl(-\tfrac{1}{2}\Bigr)\bigl(1+2\Phi_N/c^2\bigr)
+        = 1 + \frac{2\Phi_N(x)}{c^2}.
+      \]
+      At first order in $\Phi_N/c^2$: $R(x) \approx 1 + \Phi_N(x)/c^2$.
+      Equation~\eqref{eq:timedilation-weak} follows from~\eqref{eq:timedilation}.
+      The 1/r profile of $\Phi_N(x)$ is the Green function of $A_g$ in three spatial dimensions,
+      as established in~\cite{Beau2026h} Section~2.3.
+    \end{proof}
+
+    \begin{remark}[Status of the weak-field result]\label{rem:status-weak}
+      Corollary~\ref{cor:weakfield} is conditional on two imports:
+      (i) the effective Einstein equations from~\cite{Beau2026h} (in the infrared,
+      weak-curvature, regime $R\ell^2_{\mathrm{sp}} \ll 1$);
+      (ii) the identification of $\Phi_N(x)$ as the Newton coupling via the Green
+      function of $A_g$ (Section~2.3 of~\cite{Beau2026h}).
+      No new hypothesis is introduced here.
+      The result is a consequence of combining the capacity-lapse language with the
+      gravitational output of~\cite{Beau2026h}.
+    \end{remark}
+
+  \section{Logical Status and Open Problems}\label{sec:status}
+
+  \subsection{Status table}
+
+    \begin{center}
+      \renewcommand{\arraystretch}{1.2}
+      \begin{tabular}{lll}
+        \hline
+        Label & Content & Status \\
+        \hline
+        \cite{Beau2026tp} Thm.~4.5 & Homogeneous map $\sqrt{1-B_n^2}$, uniqueness &
+        Proved (under [U]) \\
+        Q11~\cite{Beau2026q11} & $A_\tau = 2$, flat metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ &
+        Proved (under [U]) \\
+        Definition~\ref{def:radius} & $R(x)^2 = 1-\epsilon(x)$ &
+        Structural (this paper) \\
+        Definition~\ref{def:lapse} & $R(x)^2 = -2g_{\tau\tau}(x)$ &
+        Structural (this paper) \\
+        Theorem~\ref{thm:main} & Fibrewise map, uniqueness &
+        Proved (under [U] + fibrewise BI lift) \\
+        Corollary~\ref{cor:timedil} & $d\tau/dn|_x = R(x)/\gamma$ &
+        Proved (under [U] + fibrewise BI lift) \\
+        Corollary~\ref{cor:weakfield} & $R(x) \approx 1+\Phi_N/c^2$ &
+        Conditional (imports~\cite{Beau2026h}) \\
+        \hline
+      \end{tabular}
+    \end{center}
+
+  \subsection{What is not proved here}
+
+    The present paper does not derive the Einstein field equations.
+    That derivation is in~\cite{Beau2026h}.
+    The present paper does not derive $R(x)$ from first principles as a function of the
+    spectral occupancy $\epsilon(x)$.
+    It gives two definitions (Definitions~\ref{def:radius} and~\ref{def:lapse}) that are
+    equivalent in the Einstein regime, but the bridge $\epsilon(x) \leftrightarrow g_{\tau\tau}(x)$
+    is not closed analytically within the capacity-flow language alone.
+    Closing this bridge is LC-O2's remaining open problem (LC-O2-O1 below).
+
+  \subsection{Open problems}
+
+    \paragraph{LC-O2-O1 (Spectral closure of $R(x) \leftrightarrow g_{\tau\tau}(x)$).}
+      Definitions~\ref{def:radius} and~\ref{def:lapse} give two expressions for $R(x)$:
+      one from spectral occupancy $\epsilon(x)$ and one from the effective metric.
+      A direct spectral derivation showing
+      \[
+        \epsilon(x) = 1-R(x)^2 = 1+2g_{\tau\tau}(x)
+      \]
+      from the admissibility data alone would close this identification without importing
+      the Einstein equations.
+      This is the capacity-flow analogue of deriving gravitational time dilation from the
+      spectral operator structure directly.
+
+    \paragraph{LC-O2-O2 (Length contraction in the fibrewise regime).}
+      Corollary~\ref{cor:timedil} gives fibrewise time dilation and the light cone.
+      Length contraction in the non-homogeneous setting requires a comparison of
+      spatial capacity across different fibres and the reconstruction of effective Lorentz
+      transformations between locally inertial observers in the curved geometry.
+
+    \paragraph{LC-O2-O3 (Strong-field regime: $R(x) \to 0$).}
+      Remark~\ref{rem:lightcone} identifies $R(x) = 0$ with a horizon-like saturation locus
+      or a breakdown of the effective metric description.
+      The capacity-flow language provides a novel criterion for horizon formation:
+      the local capacity budget is fully saturated by the configuration.
+      Whether this criterion reproduces the Schwarzschild horizon condition is open.
+
+  \section*{Acknowledgements}
+
+  The author acknowledges the use of large language models as a supportive tool for refining
+  language, structure, and internal consistency during the development of this manuscript.
+
+  \newpage
+
+  \bibliographystyle{plain}
+  \bibliography{cosmochrony-bibliography}
+
+\end{document}
