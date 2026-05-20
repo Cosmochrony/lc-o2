@@ -68,6 +68,10 @@ and Gravitational Time Dilation\\
     dilation in the capacity-flow language:
     a non-uniform projected configuration reduces the local Born--Infeld capacity radius,
     and the temporal residual map becomes fibrewise.
+    In summary: special-relativistic time dilation is the homogeneous capacity trade-off
+    between spatial mobility and temporal residual capacity;
+    gravitational time dilation is the fibrewise version of the same trade-off, in which
+    the available capacity radius is reduced by local spectral occupancy.
   \end{abstract}
 
   \noindent\textbf{Keywords.}
@@ -141,14 +145,52 @@ and Gravitational Time Dilation\\
         $\sqrt{f(2-f)}$ is the universal normalised Lorentzian structure
         established in~\cite{Beau2026tp}.
 
-  \subsection{Main results and organisation}
+  \subsection{Conceptual interpretation}\label{sec:interp}
 
-    Section~\ref{sec:setup} fixes the fibrewise extension of the capacity bundle.
-    Section~\ref{sec:spectral} defines $R(x)$ spectrally and identifies it with the metric.
-    Section~\ref{sec:main} states and proves the main theorem (fibrewise map).
-    Section~\ref{sec:timedil} extracts the gravitational time dilation formula.
-    Section~\ref{sec:weakfield} derives the weak-field limit from~\cite{Beau2026h}.
-    Section~\ref{sec:status} gives the logical status table.
+    \paragraph{Capacity arbitration.}
+      The Born--Infeld budget is a local capacity arbitration principle.
+      In the homogeneous case, spatial mobility consumes part of the unit projective capacity
+      budget, leaving a temporal residual $1/\gamma$.
+      In the non-homogeneous case, a local projected configuration has already depleted part
+      of the available capacity, reducing the local radius of the BI sphere to $R(x)$.
+      Thus kinematic time dilation and gravitational time dilation are two independent
+      manifestations of the same capacity trade-off:
+      \begin{equation}\label{eq:unification}
+        \frac{d\tau}{dn}\bigg|_x = R(x)\,\frac{1}{\gamma}.
+      \end{equation}
+      The factor $1/\gamma$ measures the capacity diverted into spatial mobility, while
+      $R(x)$ measures the capacity already occupied by the local spectral configuration.
+      In this reading, curvature is the effective metric expression of local
+      projective-capacity depletion.
+
+    \paragraph{Pivot statement.}
+      Special-relativistic time dilation is the homogeneous capacity trade-off between spatial
+      mobility and temporal residual capacity.
+      Gravitational time dilation is the fibrewise version of the same trade-off, in which the
+      available capacity radius is reduced by local spectral occupancy.
+
+    \paragraph{Epistemic boundary.}
+      The present result does not derive the Einstein equations and does not yet derive
+      $R(x)$ directly from admissibility data alone.
+      It gives the fibrewise capacity interpretation of the metric lapse once the effective
+      metric has been supplied by the infrared Einstein response of~\cite{Beau2026h}.
+      The remaining open problem is to prove, within the capacity-flow language itself, that
+      \[
+        \epsilon(x) = 1-R(x)^2 = 1+2g_{\tau\tau}(x).
+      \]
+      Until this bridge is closed, the equivalence between spectral occupancy and metric lapse
+      is an imported Einstein-regime identification, not an internal derivation.
+
+  \subsection{Main results and organisation}\label{sec:org}
+
+  Section~\ref{sec:setup} fixes the fibrewise extension of the capacity bundle.
+  Section~\ref{sec:spectral} defines $R(x)$ and identifies it with the metric.
+  Section~\ref{sec:main} states and proves the main theorem (fibrewise map) and the
+  homogeneous corollary.
+  Section~\ref{sec:timedil} extracts the gravitational time dilation formula.
+  Section~\ref{sec:weakfield} derives the weak-field limit from~\cite{Beau2026h}.
+  Section~\ref{sec:status} gives the logical status table.
+  The conceptual interpretation and epistemic boundary are in Section~\ref{sec:interp}.
 
   \section{Fibrewise Capacity Bundle}\label{sec:setup}
 
