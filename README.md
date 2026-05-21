@@ -37,9 +37,9 @@ gravitational time dilation formula.
 ## Key features
 
 - The homogeneous case ($R(x) \equiv 1$) reduces to TempProj as a corollary.
-- The local capacity radius $R(x)$ is identified metrically from Q5b/Q11; the remaining
-  open problem (LC-O2-O1) is to derive $R(x)$ directly from $\epsilon(x)$ without
-  importing the Einstein equations.
+- The local capacity radius $R(x)$ is identified metrically from Q5b/Q11; the open
+  problem LC-O2-O1 (derive $R(x)$ directly from $\epsilon(x)$ without importing the
+  Einstein equations) is closed by the companion paper LCIIo1 (`Beau2026lco2o1`).
 - The factorisation $R(x) \times \sqrt{f(2-f)}$ cleanly separates local physics
   from the universal normalised Lorentzian structure.
 
@@ -47,7 +47,9 @@ gravitational time dilation formula.
 
 - Fibrewise map construction: **structural**
 - Gravitational time dilation formula: **structural** (imports $g_{\tau\tau}$ from Gravity paper)
-- Open: derivation of $R(x)$ from $\epsilon(x)$ without Einstein equation (LC-O2-O1)
+- LC-O2-O1 (derivation of $R(x)$ from $\epsilon(x)$ without Einstein equation): **closed**
+  by LCIIo1 (`Beau2026lco2o1`) via $\mathrm{SU}(2)$-Schur reduction on $\mathrm{Sym}^{2}(V_{\rho})$
+  and the principal-symbol identification
 
 ## Position in the sub-programme
 

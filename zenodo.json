@@ -2,6 +2,7 @@
   "bib_key": "Beau2026lco2",
   "web_url": "https://cosmochrony.org/science/lc-o2/",
   "main_tex": "tex/lc-o2.tex",
+  "publication_type": "workingpaper",
   "zenodo_id": 20317235,
   "doi": "10.5281/zenodo.20317235"
 }
