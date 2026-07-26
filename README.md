@@ -37,9 +37,13 @@ gravitational time dilation formula.
 ## Key features
 
 - The homogeneous case ($R(x) \equiv 1$) reduces to TempProj as a corollary.
-- The local capacity radius $R(x)$ is identified metrically from Q5b/Q11; the open
+- The local capacity radius $R(x)$ is identified metrically from Q5b/Q11. The open
   problem LC-O2-O1 (derive $R(x)$ directly from $\epsilon(x)$ without importing the
-  Einstein equations) is closed by the companion paper LCIIo1 (`Beau2026lco2o1`).
+  Einstein equations) **remains open**: the companion paper LCIIo1
+  (`Beau2026lco2o1`) shows that the free-fraction law
+  $A_\tau = A_\tau^\infty(1-\epsilon)$ does *not* close it — combined with
+  $g^{\tau\tau} = -A_\tau$ it yields $g_{\tau\tau}/g_{\tau\tau}^\infty = 1/(1-\epsilon)$,
+  agreeing with $R^2 = 1-\epsilon$ only at $\epsilon = 0$.
 - The factorisation $R(x) \times \sqrt{f(2-f)}$ cleanly separates local physics
   from the universal normalised Lorentzian structure.
 
@@ -47,9 +51,11 @@ gravitational time dilation formula.
 
 - Fibrewise map construction: **structural**
 - Gravitational time dilation formula: **structural** (imports $g_{\tau\tau}$ from Gravity paper)
-- LC-O2-O1 (derivation of $R(x)$ from $\epsilon(x)$ without Einstein equation): **closed**
-  by LCIIo1 (`Beau2026lco2o1`) via $\mathrm{SU}(2)$-Schur reduction on $\mathrm{Sym}^{2}(V_{\rho})$
-  and the principal-symbol identification
+- LC-O2-O1 (derivation of $R(x)$ from $\epsilon(x)$ without Einstein equation): **open**.
+  The equivalence of the capacity and metric definitions of $R(x)$ (Remark 3.2) is an
+  explicitly declared **postulate**, physically coherent and consistent with the
+  Schwarzschild weak-field limit, but not derived. LCIIo1 (`Beau2026lco2o1`)
+  establishes a no-go for the free-fraction reduction
 
 ## Position in the sub-programme
 

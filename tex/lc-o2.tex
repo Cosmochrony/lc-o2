@@ -25,10 +25,10 @@ and Gravitational Time Dilation\\
   \maketitle
 
   \begin{abstract}
-    The note~\cite{Beau2026n} identifies the construction of a temporal residual
+    The LorCap note identifies the construction of a temporal residual
     map~$\mathcal{P}_\tau^{\mathrm{Q5b}}$ as the remaining step needed to close the Lorentz
     identification from O7 observables.
-    The paper~\cite{Beau2026tp} carries out this construction in the homogeneous regime and
+    The TempProj paper carries out this construction in the homogeneous regime and
     establishes the uniqueness of the resulting map.
     The present paper extends this construction to the non-homogeneous fibrewise regime;
     the homogeneous case is recovered as Corollary~\ref{cor:homogeneous}.
@@ -54,16 +54,17 @@ and Gravitational Time Dilation\\
     $R(x)^2 = -2\,g_{\tau\tau}(x)$,
     where $g_{\tau\tau}(x)$ is the inverse metric temporal component
     and the factor of $2$ comes from the flat-space reference $g_{\tau\tau}^\infty = -1/2$
-    (Q11~\cite{Beau2026q11}).
+    (Q11).
     In the weak-field regime, the Newtonian profile of $g_{\tau\tau}(x)$ established
-    in~\cite{Beau2026h} gives $R(x) \approx 1 + \Phi_N(x)/c^2$, recovering
+    in the Gravity paper gives $R(x) \approx 1 + \Phi_N(x)/c^2$, recovering
     gravitational time dilation as a consequence of the local BI capacity budget.
     The open spectral problem is to derive $R(x)$ directly from the local occupancy
     $\epsilon(x)$ without importing the Einstein equations (LC-O2-O1).
 
+    \textbf{Interpretive reading.}
     The purpose of this note is not to rederive the Einstein equation.
     The infrared Einstein response is supplied by the renormalized spectral entropy
-    functional of~\cite{Beau2026h}.
+    functional of the Gravity paper.
     The purpose is instead to identify the local kinematic meaning of gravitational time
     dilation in the capacity-flow language:
     a non-uniform projected configuration reduces the local Born--Infeld capacity radius,
@@ -127,7 +128,7 @@ and Gravitational Time Dilation\\
         This mixes the local budget into the definition of $B(x,n)$ and loses the clean
         separation between Lorentzian geometry and local scale.
 
-      \paragraph{Normalised capacity formulation (canonical).}
+      \paragraph{Canonical normalisation.}
         Write $B(x,n) = R(x)\,\beta(x,n)$ with $\beta(x,n) \in [0,1]$ the local normalised
         spatial mobility, and $f(x,n) = 1-\beta(x,n)$.
         The BI sphere in normalised variables is $(F^\tau)^2/R(x)^2 + \beta^2 = 1$, giving
@@ -296,6 +297,14 @@ $\beta(x,n) + f(x,n) = 1$.
       Their direct equivalence from the admissibility data alone is not proved here;
       establishing $\epsilon(x) = 1-R(x)^2 = 1+2g_{\tau\tau}(x)$ purely from spectral occupancy
       is stated as open problem LC-O2-O1.
+      That problem remains open.
+      A scalar reduction of the local admissibility weight, of the free-fraction form
+      $A_\tau(x) = A_\tau^\infty(1-\epsilon(x))$, is shown in~\cite{Beau2026lco2o1} not to close it:
+      combined with the principal-symbol identification $g^{\tau\tau} = -A_\tau$
+      of~\cite{Beau2026q11}, it yields $g_{\tau\tau}(x)/g_{\tau\tau}^\infty = 1/(1-\epsilon(x))$,
+      which agrees with Definition~\ref{def:radius} only at $\epsilon = 0$.
+      The postulate below is therefore used as such, and is not derived from any presently
+      available local weight reduction.
       The metric formulation~\eqref{eq:lapse} is used for the weak-field derivation
       in Section~\ref{sec:weakfield}.
     \end{remark}
@@ -500,6 +509,51 @@ $\beta(x,n) + f(x,n) = 1$.
       as established in~\cite{Beau2026h} Section~2.3.
     \end{proof}
 
+    \begin{remark}[Escape-velocity form of the capacity radius]\label{rem:escape}
+      For the Schwarzschild exterior, the capacity lapse~\eqref{eq:lapse} is exactly
+      \begin{equation}\label{eq:R-schw}
+        R^2 = 1 - \frac{2 G_N M}{r c^2} = 1 - \frac{v_{\mathrm{esc}}^2(r)}{c^2},
+        \qquad
+        v_{\mathrm{esc}}^2(r) := \frac{2 G_N M}{r},
+      \end{equation}
+      so the occupied fraction of the local Born--Infeld budget is the squared escape velocity in units
+      of $c$, namely $\epsilon = v_{\mathrm{esc}}^2/c^2$.
+      Separately, in the general Newtonian regime of Corollary~\ref{cor:weakfield},
+      equation~\eqref{eq:Rweak} gives to first order
+      \begin{equation}\label{eq:eps-newt}
+        \epsilon \simeq -\frac{2\Phi_N}{c^2}.
+      \end{equation}
+      Combined with~\eqref{eq:timedilation}, both dilations then sit on the same local BI
+      sphere~\eqref{eq:BIlocal}:
+      \begin{equation}\label{eq:two-mobilities}
+        \frac{d\tau}{dn}\bigg|_x
+        = \sqrt{1 - \frac{v_{\mathrm{esc}}^2}{c^2}}\;\sqrt{1 - \beta^2},
+      \end{equation}
+      each factor being the \emph{reciprocal} of a Lorentz factor --- one built from the gravitational
+      mobility $v_{\mathrm{esc}}/c$, the other from the kinematic mobility $\beta$ --- so that the two
+      mobilities occupy the budget in the same quadratic way.
+
+      Four qualifications apply.
+
+      \noindent
+      (i) Identity~\eqref{eq:R-schw} is exact in the Schwarzschild exterior.
+      \eqref{eq:eps-newt} holds to first order in $\Phi_N/c^2$ in the general Newtonian regime.
+
+      \noindent
+      (ii) The step from the lapse to the occupancy $\epsilon$ uses the postulated equivalence of
+      Definitions~\ref{def:radius} and~\ref{def:lapse} (Remark~\ref{rem:equiv}); the present remark
+      inherits that conditional status and does not strengthen it.
+
+      \noindent
+      (iii) This is a rewriting of the capacity lapse, not an independent derivation of the equivalence
+      principle: the common budget cost of the two mobilities is read off the sphere, not derived from
+      a matter model.
+
+      \noindent
+      (iv) Reading $v_{\mathrm{esc}}$ as an infall velocity in Gullstrand--Painlev\'e coordinates is
+      foliation-dependent and is retained here as interpretation only.
+    \end{remark}
+
     \begin{remark}[Status of the weak-field result]\label{rem:status-weak}
       Corollary~\ref{cor:weakfield} is conditional on two imports:
       (i) the effective Einstein equations from~\cite{Beau2026h} (in the infrared,
@@ -517,7 +571,8 @@ $\beta(x,n) + f(x,n) = 1$.
 
     \begin{center}
       \renewcommand{\arraystretch}{1.2}
-      \begin{tabular}{lll}
+      \small
+      \begin{tabular}{p{2.8cm}p{6.5cm}p{4.2cm}}
         \hline
         Label & Content & Status \\
         \hline
@@ -576,6 +631,23 @@ $\beta(x,n) + f(x,n) = 1$.
       The capacity-flow language provides a novel criterion for horizon formation:
       the local capacity budget is fully saturated by the configuration.
       Whether this criterion reproduces the Schwarzschild horizon condition is open.
+
+  \section{Conclusion}
+  \label{sec:conclusion}
+
+    The fibrewise Born--Infeld construction factors the temporal residual map into a local
+    capacity radius and the standard kinematic factor.
+    Under the stated inputs, it yields $d\tau/dn|_x=R(x)/\gamma$ and reproduces the weak-field
+    gravitational lapse after importing the Einstein response from the Gravity branch.
+    The equivalence between the occupancy definition $R(x)^2=1-\epsilon(x)$ and the metric
+    definition $R(x)^2=-2g_{\tau\tau}(x)$ remains a declared postulate rather than a derived
+    consequence of local admissibility.
+
+    \paragraph{Interpretive outlook.}
+    The established result supports reading gravitational time dilation as a local reduction of
+    residual temporal capacity.
+    This reading is conditional on the open capacity--metric bridge and does not itself derive
+    gravity from the occupancy field.
 
   \section*{Acknowledgements}
 
