@@ -40,7 +40,7 @@ gravitational time dilation formula, which the supplied metric carries, in the c
 - The homogeneous case ($R(x) \equiv 1$) reduces to TempProj as a corollary.
 - The local capacity radius $R(x)$ is identified metrically with the lapse ratio of a supplied Lorentzian
   co-metric; no source constructs that co-metric (Q5b gives rank three under [H-L] and [H-lift], and Q11 gives
-  $g \propto \eta$ only after rescaling $\tau$, for a supplied extension, with $A_\tau$ free). The open
+  $g \propto \eta$ only after rescaling $\tau$, under the hypotheses of its Corollary 6.1, with $A_\tau$ free). The open
   problem LC-O2-O1 (derive $R(x)$ directly from $\epsilon(x)$ without a supplied metric) **remains open**: the companion paper LCIIo1
   (`Beau2026lco2o1`) shows that the free-fraction law
   $A_\tau = A_\tau^\infty(1-\epsilon)$ does *not* close it — combined with
@@ -73,7 +73,7 @@ LorCap → TempProj → LCII
 | TempProj (`Beau2026tp`) | Flat-space baseline (homogeneous case) |
 | LorCap (`Beau2026n`) | Origin of LC-O2 open problem |
 | Q5b (`Beau2026q5b`) | Effective operator, co-metric, Carnot geometry |
-| Q11 (`Beau2026q11`) | $A_\tau$ free; $g \propto \eta$ after rescaling $\tau$, under the hypotheses of Cor. 6.1 ([H-L], [H-lift], a supplied full-rank extension with [T] and [INV⁺] of Q8, [ACT$_\tau$] invariance, a negative ordering term) |
+| Q11 (`Beau2026q11`) | $A_\tau$ free; $g \propto \eta$ after rescaling $\tau$, under the hypotheses of Cor. 6.1 ([H-L], [H-lift], a supplied full-rank extension with [T] and [INV$^+$] of Q8, [ACT$_\tau$] invariance, a negative ordering term) |
 | Gravity/H (`Beau2026h`) | Einstein term on a supplied Riemannian metric; supplies no Lorentzian $g_{\tau\tau}(x)$ |
 | BI (`Beau2026c`) | Born-Infeld admissibility budget |
 | Foundation (`Beau2026m`) | Structural axioms |
