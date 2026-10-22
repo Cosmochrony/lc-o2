@@ -194,7 +194,7 @@ and Gravitational Time Dilation\\
   Section~\ref{sec:main} states and proves the main theorem (fibrewise map) and the
   homogeneous corollary.
   Section~\ref{sec:timedil} extracts the gravitational time dilation formula.
-  Section~\ref{sec:weakfield} derives the weak-field limit from~\cite{Beau2026h}.
+  Section~\ref{sec:weakfield} restates the weak-field lapse of a supplied weak-field metric.
   Section~\ref{sec:status} gives the logical status table.
   The conceptual interpretation and epistemic boundary are in Section~\ref{sec:interp}.
 
@@ -207,9 +207,12 @@ and Gravitational Time Dilation\\
     No source constructs it: under the spatial-limit hypothesis [H-L] and the lifting hypothesis [H-lift],
     Q5b~\cite{Beau2026q5b} gives a co-metric of rank three (its rank-four extension is open problem Q5b-O2).
     In the homogeneous regime we take the form of Q11~\cite{Beau2026q11}, Corollary~6.1,
-    $g^{\mu\nu} = \mathrm{diag}(-A_\tau^\infty, 2\lambda, 2\lambda, 2\lambda)$, which holds for a supplied
-    extension satisfying the hypotheses of that corollary, with $A_\tau^\infty > 0$ and $\lambda > 0$ independent
-    and fixed by no source; it is proportional to $\eta^{\mu\nu}$ only after rescaling $\tau$.
+    $g^{\mu\nu} = \mathrm{diag}(-A_\tau^\infty, 2\lambda, 2\lambda, 2\lambda)$, which holds under the hypotheses of
+    that corollary: [H-L] and [H-lift], a supplied full-rank extension satisfying [T] and [INV$^+$] of
+    Q8~\cite{BeauQ8}, and invariance of its four-dimensional principal symbol under the action [ACT$_\tau$] with a
+    negative ordering term.
+    Then $A_\tau^\infty > 0$ and $\lambda > 0$ are independent and fixed by no source, and the form is proportional
+    to $\eta^{\mu\nu}$ only after rescaling $\tau$.
     In the non-homogeneous regime, $g^{\mu\nu}(x)$ is supplied: Lorentzian,
     smooth in the weak-curvature regime, and reducing to its homogeneous form at spatial infinity.
     No field equation of the programme determines it.
@@ -293,7 +296,8 @@ $\beta(x,n) + f(x,n) = 1$.
       \begin{equation}\label{eq:lapse}
         R(x)^2 := \frac{g_{\tau\tau}(x)}{g_{\tau\tau}^\infty},
       \end{equation}
-      where $g_{\tau\tau}(x) = (g^{\tau\tau}(x))^{-1}$ is the inverse metric temporal component and
+      where $g_{\tau\tau}(x) = (g^{\tau\tau}(x))^{-1}$ is the temporal component of the metric, the inverse of that
+      of the co-metric, for the static co-metrics with a decoupled $\tau$ block considered here, and
       $g_{\tau\tau}^\infty = -1/A_\tau^\infty$ is its flat-space reference value.
       For the normalisation $A_\tau^\infty = 2$, which is a choice of units and not a derived value,
       $R(x)^2 = -2\,g_{\tau\tau}(x)$.
@@ -581,7 +585,8 @@ $\beta(x,n) + f(x,n) = 1$.
         \cite{Beau2026tp} Thm.~4.5 & Homogeneous map $\sqrt{1-B_n^2}$, uniqueness &
         Proved (under [U]) \\
         Q11~\cite{Beau2026q11} & $A_\tau$ free; $g^{\mu\nu} \propto \eta^{\mu\nu}$ after rescaling $\tau$, for a
-        supplied extension (Cor.~6.1) &
+        supplied extension under [H-L], [H-lift], [T], [INV$^+$], [ACT$_\tau$] and a negative ordering term
+        (Cor.~6.1) &
         Conditional; $A_\tau^\infty$ postulated here \\
         Definition~\ref{def:radius} & $R(x)^2 = 1-\epsilon(x)$ &
         Structural (this paper) \\
