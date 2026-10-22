@@ -27,19 +27,21 @@ where $f(x,n) = 1 - \beta(x,n)$ and $\beta(x,n)$ is the local normalised spatial
 
 $$\frac{d\tau}{dn}\bigg|_x = \frac{R(x)}{\gamma}$$
 
-The local capacity radius is linked to the metric by:
+The local capacity radius is linked, as a declared postulate, to a supplied Lorentzian metric by:
 
-$$R(x)^2 = -2\,g_{\tau\tau}(x)$$
+$$R(x)^2 = \frac{g_{\tau\tau}(x)}{g_{\tau\tau}^\infty},$$
 
-In the weak-field regime, $R(x) \approx 1 + \Phi_N(x)/c^2$, recovering the standard
-gravitational time dilation formula.
+where the flat-space reference $g_{\tau\tau}^\infty = -1/A_\tau^\infty$ is postulated (Q11 leaves $A_\tau$ free).
+For a supplied static weak-field metric, $R(x) \approx 1 + \Phi_N(x)/c^2$: this restates the standard
+gravitational time dilation formula, which the supplied metric carries, in the capacity language.
 
 ## Key features
 
 - The homogeneous case ($R(x) \equiv 1$) reduces to TempProj as a corollary.
-- The local capacity radius $R(x)$ is identified metrically from Q5b/Q11. The open
-  problem LC-O2-O1 (derive $R(x)$ directly from $\epsilon(x)$ without importing the
-  Einstein equations) **remains open**: the companion paper LCIIo1
+- The local capacity radius $R(x)$ is identified metrically with the lapse ratio of a supplied Lorentzian
+  co-metric; no source constructs that co-metric (Q5b gives rank three under [H-L] and [H-lift], and Q11 gives
+  $g \propto \eta$ only after rescaling $\tau$, for a supplied extension, with $A_\tau$ free). The open
+  problem LC-O2-O1 (derive $R(x)$ directly from $\epsilon(x)$ without a supplied metric) **remains open**: the companion paper LCIIo1
   (`Beau2026lco2o1`) shows that the free-fraction law
   $A_\tau = A_\tau^\infty(1-\epsilon)$ does *not* close it — combined with
   $g^{\tau\tau} = -A_\tau$ it yields $g_{\tau\tau}/g_{\tau\tau}^\infty = 1/(1-\epsilon)$,
@@ -50,8 +52,9 @@ gravitational time dilation formula.
 ## Status
 
 - Fibrewise map construction: **structural**
-- Gravitational time dilation formula: **structural** (imports $g_{\tau\tau}$ from Gravity paper)
-- LC-O2-O1 (derivation of $R(x)$ from $\epsilon(x)$ without Einstein equation): **open**.
+- Gravitational time dilation formula: **conditional** on a supplied weak-field Lorentzian metric (no paper of
+  the programme derives it)
+- LC-O2-O1 (derivation of $R(x)$ from $\epsilon(x)$ without a supplied metric): **open**.
   The equivalence of the capacity and metric definitions of $R(x)$ (Remark 3.2) is an
   explicitly declared **postulate**, physically coherent and consistent with the
   Schwarzschild weak-field limit, but not derived. LCIIo1 (`Beau2026lco2o1`)
@@ -70,8 +73,8 @@ LorCap → TempProj → LCII
 | TempProj (`Beau2026tp`) | Flat-space baseline (homogeneous case) |
 | LorCap (`Beau2026n`) | Origin of LC-O2 open problem |
 | Q5b (`Beau2026q5b`) | Effective operator, co-metric, Carnot geometry |
-| Q11 (`Beau2026q11`) | Co-metric completion $g^{\mu\nu} = 2\eta^{\mu\nu}$ |
-| Gravity/H (`Beau2026h`) | IR Einstein response — provides $g_{\tau\tau}(x)$ |
+| Q11 (`Beau2026q11`) | $A_\tau$ free; $g \propto \eta$ after rescaling $\tau$, for a supplied extension (Cor. 6.1) |
+| Gravity/H (`Beau2026h`) | Einstein term on a supplied Riemannian metric; supplies no Lorentzian $g_{\tau\tau}(x)$ |
 | BI (`Beau2026c`) | Born-Infeld admissibility budget |
 | Foundation (`Beau2026m`) | Structural axioms |
 
