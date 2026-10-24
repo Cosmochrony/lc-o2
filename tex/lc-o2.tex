@@ -49,11 +49,10 @@ and Gravitational Time Dilation\\
     \]
     where $f(x,n) = 1-\beta(x,n)$ and $\beta(x,n)$ is the local normalised spatial
     mobility.
-    Gravitational time dilation is identified as the position-dependence of the temporal
-    residual capacity:
-    \[
-      \frac{d\tau}{dn}\bigg|_x = R(x)\,\sqrt{1-\beta^2} = \frac{R(x)}{\gamma}.
-    \]
+    The temporal residual capacity per ordering step at $x$ is $|F^\tau(x,n)| = R(x)\sqrt{1-\beta^2} = R(x)/\gamma$,
+    distinct from the constant ordering step $d\tau/dn = \Delta\tau$.
+    Read as the proper-time rate of an observer at $x$, which requires the cone--capacity identification [H-cone]
+    of TempProj and the postulate below, it is gravitational time dilation.
     The local capacity radius is identified metrically, as a declared postulate, with the lapse ratio
     $R(x)^2 = g_{\tau\tau}(x)/g_{\tau\tau}^\infty$ of a supplied Lorentzian co-metric, where
     $g_{\tau\tau}^\infty$ is a flat-space reference whose value is postulated: Q11 shows that spatial
@@ -73,7 +72,7 @@ and Gravitational Time Dilation\\
     dilation in the capacity-flow language:
     a non-uniform projected configuration reduces the local Born--Infeld capacity radius,
     and the temporal residual map becomes fibrewise.
-    In summary: special-relativistic time dilation is the homogeneous capacity trade-off
+    In summary, under [H-cone]: special-relativistic time dilation is the homogeneous capacity trade-off
     between spatial mobility and temporal residual capacity;
     gravitational time dilation is the fibrewise version of the same trade-off, in which
     the available capacity radius is reduced by local spectral occupancy.
@@ -161,15 +160,17 @@ and Gravitational Time Dilation\\
       Thus kinematic time dilation and gravitational time dilation are two independent
       manifestations of the same capacity trade-off:
       \begin{equation}\label{eq:unification}
-        \frac{d\tau}{dn}\bigg|_x = R(x)\,\frac{1}{\gamma}.
+        |F^\tau(x,n)| = R(x)\,\frac{1}{\gamma}.
       \end{equation}
+      Read as a proper-time rate, under [H-cone] and the postulate of Remark~\ref{rem:equiv}, this is
+      $d\tau_u/d\hat\tau|_x = R(x)/\gamma$.
       The factor $1/\gamma$ measures the capacity diverted into spatial mobility, while
       $R(x)$ measures the capacity already occupied by the local spectral configuration.
       In this reading, curvature is the effective metric expression of local
       projective-capacity depletion.
 
     \paragraph{Pivot statement.}
-      Special-relativistic time dilation is the homogeneous capacity trade-off between spatial
+      Under [H-cone], special-relativistic time dilation is the homogeneous capacity trade-off between spatial
       mobility and temporal residual capacity.
       Gravitational time dilation is the fibrewise version of the same trade-off, in which the
       available capacity radius is reduced by local spectral occupancy.
@@ -314,7 +315,8 @@ $\beta(x,n) + f(x,n) = 1$.
       A scalar reduction of the local admissibility weight, of the free-fraction form
       $A_\tau(x) = A_\tau^\infty(1-\epsilon(x))$, is shown in~\cite{Beau2026lco2o1} not to close it:
       combined with the principal-symbol identification $g^{\tau\tau} = -A_\tau$
-      of~\cite{Beau2026q11} (under the hypotheses of its Corollary~6.1), it yields $g_{\tau\tau}(x)/g_{\tau\tau}^\infty = 1/(1-\epsilon(x))$,
+      of~\cite{Beau2026q11} (under the hypotheses of its Corollary~6.1), it yields
+      $g_{\tau\tau}(x)/g_{\tau\tau}^\infty = 1/(1-\epsilon(x))$,
       which agrees with Definition~\ref{def:radius} only at $\epsilon = 0$.
       The postulate below is therefore used as such, and is not derived from any presently
       available local weight reduction.
@@ -440,19 +442,23 @@ $\beta(x,n) + f(x,n) = 1$.
     independent of $R(x)$, where $\gamma = (1-\beta^2)^{-1/2}$.
     Consequently $\Phi(\eta_x^\tau) = 1/\gamma$ as in the homogeneous case.
 
-    The temporal residual per unit cascade depth at position $x$ is
+    The temporal residual capacity per ordering step at position $x$ is
     \begin{equation}\label{eq:timedilation}
-      \frac{d\tau}{dn}\bigg|_x
-      = |F^\tau(x,n)| = R(x)\,\frac{1}{\gamma}
+      |F^\tau(x,n)| = R(x)\,\frac{1}{\gamma}
       = \frac{R(x)}{\gamma}.
     \end{equation}
-    Gravitational time dilation is the factor $R(x) \leq 1$ multiplying the special-relativistic
-    dilation $1/\gamma$:
+    It is a capacity increment, not the ordering step: with $\tau = n\,\Delta\tau$, $d\tau/dn = \Delta\tau$ is
+    constant.
+    Under [H-cone] and the postulated equivalence of Remark~\ref{rem:equiv},~\eqref{eq:timedilation} is read as
+    the proper-time rate $d\tau_u/d\hat\tau|_x$ of an observer at $x$ and load $\beta$, relative to the rescaled
+    ordering coordinate $\hat\tau$ normalised at spatial infinity.
+    Gravitational time dilation is then the factor $R(x) \leq 1$ multiplying the special-relativistic
+    factor $1/\gamma$:
     \begin{equation}\label{eq:ratio}
-      \frac{(d\tau/dn)|_x}{(d\tau/dn)|_\infty}
+      \frac{|F^\tau(x,n)|}{|F^\tau(\infty,n)|}
       = \frac{R(x)/\gamma}{1/\gamma} = R(x).
     \end{equation}
-    Near a massive body $R(x) < 1$, and clocks at position $x$ run slower than clocks at
+    In that reading, near a massive body $R(x) < 1$, and clocks at position $x$ run slower than clocks at
     infinity by the factor $R(x)$.
   \end{corollary}
 
@@ -498,9 +504,9 @@ $\beta(x,n) + f(x,n) = 1$.
       \begin{equation}\label{eq:Rweak}
         R(x) = \sqrt{\frac{g_{\tau\tau}(x)}{g_{\tau\tau}^\infty}} \;\approx\; 1+\frac{\Phi_N(x)}{c^2},
       \end{equation}
-      and the gravitational time dilation formula~\eqref{eq:timedilation} becomes
+      and the residual~\eqref{eq:timedilation}, read under [H-cone] as a proper-time rate, becomes
       \begin{equation}\label{eq:timedilation-weak}
-        \frac{d\tau}{dn}\bigg|_x
+        \frac{d\tau_u}{d\hat\tau}\bigg|_x
         \;\approx\; \Bigl(1+\frac{\Phi_N(x)}{c^2}\Bigr)\,\frac{1}{\gamma},
       \end{equation}
       in agreement with the standard result of general relativity at leading weak-field order, which the
@@ -534,7 +540,7 @@ $\beta(x,n) + f(x,n) = 1$.
       Combined with~\eqref{eq:timedilation}, both dilations then sit on the same local BI
       sphere~\eqref{eq:BIlocal}:
       \begin{equation}\label{eq:two-mobilities}
-        \frac{d\tau}{dn}\bigg|_x
+        |F^\tau(x,n)|
         = \sqrt{1 - \frac{v_{\mathrm{esc}}^2}{c^2}}\;\sqrt{1 - \beta^2},
       \end{equation}
       each factor being the \emph{reciprocal} of a Lorentz factor --- one built from the gravitational
@@ -583,7 +589,7 @@ $\beta(x,n) + f(x,n) = 1$.
         Label & Content & Status \\
         \hline
         \cite{Beau2026tp} Thm.~4.5 & Homogeneous map $\sqrt{1-B_n^2}$, uniqueness &
-        Proved (under [U]) \\
+        Proved (under a supplied co-metric, the identification (S) and the BI lift) \\
         Q11~\cite{Beau2026q11} & $A_\tau$ free; $g^{\mu\nu} \propto \eta^{\mu\nu}$ after rescaling $\tau$, for a
         supplied extension under [H-L], [H-lift], [T], [INV$^+$], [ACT$_\tau$] and a negative ordering term
         (Cor.~6.1) &
@@ -594,8 +600,9 @@ $\beta(x,n) + f(x,n) = 1$.
         Structural (this paper) \\
         Theorem~\ref{thm:main} & Fibrewise map, uniqueness &
         Proved (under [H-L], [U], fibrewise BI lift, supplied co-metric) \\
-        Corollary~\ref{cor:timedil} & $d\tau/dn|_x = R(x)/\gamma$ &
-        Proved (under [H-L], [U], fibrewise BI lift, supplied co-metric) \\
+        Corollary~\ref{cor:timedil} & $|F^\tau(x,n)| = R(x)/\gamma$ &
+        Proved (under [H-L], [U], fibrewise BI lift, supplied co-metric); its reading as a proper-time rate
+        is conditional on [H-cone] and the postulate of Remark~\ref{rem:equiv} \\
         Corollary~\ref{cor:weakfield} & $R(x) \approx 1+\Phi_N/c^2$ &
         Conditional (supplied weak-field metric) \\
         \hline
@@ -633,7 +640,8 @@ $\beta(x,n) + f(x,n) = 1$.
       spectral operator structure directly.
 
     \paragraph{LC-O2-O2 (Length contraction in the fibrewise regime).}
-      Corollary~\ref{cor:timedil} gives fibrewise time dilation and the light cone.
+      Corollary~\ref{cor:timedil} gives the fibrewise residual, read as time dilation under [H-cone], and the light
+      cone.
       Length contraction in the non-homogeneous setting requires a comparison of
       spatial capacity across different fibres and the reconstruction of effective Lorentz
       transformations between locally inertial observers in the curved geometry.
@@ -650,7 +658,8 @@ $\beta(x,n) + f(x,n) = 1$.
 
     The fibrewise Born--Infeld construction factors the temporal residual map into a local
     capacity radius and the standard kinematic factor.
-    Under the stated inputs, it yields $d\tau/dn|_x=R(x)/\gamma$ and restates the weak-field
+    Under the stated inputs, it yields the residual $|F^\tau(x,n)|=R(x)/\gamma$, read under [H-cone] as the
+    proper-time rate $d\tau_u/d\hat\tau|_x$, and restates the weak-field
     gravitational lapse of a supplied metric in the capacity language.
     The equivalence between the occupancy definition $R(x)^2=1-\epsilon(x)$ and the metric
     definition $R(x)^2=g_{\tau\tau}(x)/g_{\tau\tau}^\infty$ remains a declared postulate rather than a derived
@@ -659,7 +668,7 @@ $\beta(x,n) + f(x,n) = 1$.
     \paragraph{Interpretive outlook.}
     The established result supports reading gravitational time dilation as a local reduction of
     residual temporal capacity.
-    This reading is conditional on the open capacity--metric bridge and does not itself derive
+    This reading is conditional on [H-cone] and on the open capacity--metric bridge, and does not itself derive
     gravity from the occupancy field.
 
   \section*{Acknowledgements}

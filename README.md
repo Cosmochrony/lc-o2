@@ -23,9 +23,14 @@ $$\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\,\Sigma^{\mathrm{tot}}(x,n)
 
 where $f(x,n) = 1 - \beta(x,n)$ and $\beta(x,n)$ is the local normalised spatial mobility.
 
-**Gravitational time dilation** emerges as:
+The temporal residual capacity per ordering step at $x$ is
 
-$$\frac{d\tau}{dn}\bigg|_x = \frac{R(x)}{\gamma}$$
+$$|F^\tau(x,n)| = \frac{R(x)}{\gamma},$$
+
+a capacity increment, distinct from the constant ordering step $d\tau/dn = \Delta\tau$. **Gravitational time
+dilation** is its reading as the proper-time rate $d\tau_u/d\hat\tau|_x$ of an observer at $x$, relative to the
+rescaled ordering coordinate; that reading requires the cone–capacity identification [H-cone] of TempProj (not
+derived) and the postulate below.
 
 The local capacity radius is linked, as a declared postulate, to a supplied Lorentzian metric by:
 
@@ -52,8 +57,9 @@ gravitational time dilation formula, which the supplied metric carries, in the c
 ## Status
 
 - Fibrewise map construction: **structural**
-- Gravitational time dilation formula: **conditional** on a supplied weak-field Lorentzian metric (no paper of
-  the programme derives it)
+- Fibrewise residual $|F^\tau(x,n)| = R(x)/\gamma$: **proved** under the stated hypotheses; its reading as
+  gravitational time dilation is **conditional** on [H-cone] and on a supplied weak-field Lorentzian metric (no
+  paper of the programme derives either)
 - LC-O2-O1 (derivation of $R(x)$ from $\epsilon(x)$ without a supplied metric): **open**.
   The equivalence of the capacity and metric definitions of $R(x)$ (Remark 3.2) is an
   explicitly declared **postulate**, physically coherent and consistent with the
