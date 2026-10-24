@@ -72,7 +72,8 @@ and Gravitational Time Dilation\\
     dilation in the capacity-flow language:
     a non-uniform projected configuration reduces the local Born--Infeld capacity radius,
     and the temporal residual map becomes fibrewise.
-    In summary, under [H-cone]: special-relativistic time dilation is the homogeneous capacity trade-off
+    In summary, under [H-cone] and the occupancy--lapse postulate: special-relativistic time dilation is the
+    homogeneous capacity trade-off
     between spatial mobility and temporal residual capacity;
     gravitational time dilation is the fibrewise version of the same trade-off, in which
     the available capacity radius is reduced by local spectral occupancy.
@@ -98,8 +99,13 @@ and Gravitational Time Dilation\\
         \mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}
       \end{equation}
       recovers $\Phi(\eta_n^\tau) = 1/\gamma$.
-      The paper~\cite{Beau2026tp} closes this construction unconditionally and proves
-      uniqueness of the homogeneous temporal residual map.
+      The paper~\cite{Beau2026tp} carries out this construction under a supplied co-metric, the identification
+      (S) and the Born--Infeld lift, and proves uniqueness of the homogeneous temporal residual map.
+      Its kinematic reading uses the hypothesis [H-cone] of~\cite{Beau2026tp}: the light-cone speed of the
+      co-metric equals the Born--Infeld bound per ordering step.
+      [H-cone] is the datum coupling the temporal and spatial normalisations that Q11~\cite{Beau2026q11} leaves
+      open (Q11-O1); it is not derived, and the present paper uses it only where a residual is read as a
+      proper-time rate.
       The present paper extends this to the fibrewise non-homogeneous regime;
       the homogeneous case ($R(x)\equiv 1$) is recovered as
       Corollary~\ref{cor:homogeneous}.
@@ -170,7 +176,8 @@ and Gravitational Time Dilation\\
       projective-capacity depletion.
 
     \paragraph{Pivot statement.}
-      Under [H-cone], special-relativistic time dilation is the homogeneous capacity trade-off between spatial
+      Under [H-cone] and the occupancy--lapse postulate, special-relativistic time dilation is the homogeneous
+      capacity trade-off between spatial
       mobility and temporal residual capacity.
       Gravitational time dilation is the fibrewise version of the same trade-off, in which the
       available capacity radius is reduced by local spectral occupancy.
@@ -365,7 +372,7 @@ $\beta(x,n) + f(x,n) = 1$.
         \mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\,\Sigma^{\mathrm{tot}}(x,n)
         \;=\; R(x)\,\sqrt{f(x,n)\bigl(2-f(x,n)\bigr)},
       \end{equation}
-      where $f(x,n) = 1-\beta(x,n)$, $R(x)$ is the local capacity radius~\eqref{eq:lapse},
+      where $f(x,n) = 1-\beta(x,n)$, $R(x)$ is the local capacity radius~\eqref{eq:radius},
       and $\beta(x,n) \in [0,1]$ is the local normalised spatial mobility.
 
       The quadratic residual law holds fibrewise:
@@ -447,8 +454,8 @@ $\beta(x,n) + f(x,n) = 1$.
       |F^\tau(x,n)| = R(x)\,\frac{1}{\gamma}
       = \frac{R(x)}{\gamma}.
     \end{equation}
-    It is a capacity increment, not the ordering step: with $\tau = n\,\Delta\tau$, $d\tau/dn = \Delta\tau$ is
-    constant.
+    It is a capacity increment, not the ordering step: with $\tau = n\,\Delta\tau$ (Q11 Modelling
+    identification~3.1~\cite{Beau2026q11}), $d\tau/dn = \Delta\tau$ is constant.
     Under [H-cone] and the postulated equivalence of Remark~\ref{rem:equiv},~\eqref{eq:timedilation} is read as
     the proper-time rate $d\tau_u/d\hat\tau|_x$ of an observer at $x$ and load $\beta$, relative to the rescaled
     ordering coordinate $\hat\tau$ normalised at spatial infinity.
@@ -456,8 +463,9 @@ $\beta(x,n) + f(x,n) = 1$.
     factor $1/\gamma$:
     \begin{equation}\label{eq:ratio}
       \frac{|F^\tau(x,n)|}{|F^\tau(\infty,n)|}
-      = \frac{R(x)/\gamma}{1/\gamma} = R(x).
+      = \frac{R(x)/\gamma}{1/\gamma} = R(x),
     \end{equation}
+    the two residuals being compared at equal local load $\beta$.
     In that reading, near a massive body $R(x) < 1$, and clocks at position $x$ run slower than clocks at
     infinity by the factor $R(x)$.
   \end{corollary}
@@ -504,7 +512,8 @@ $\beta(x,n) + f(x,n) = 1$.
       \begin{equation}\label{eq:Rweak}
         R(x) = \sqrt{\frac{g_{\tau\tau}(x)}{g_{\tau\tau}^\infty}} \;\approx\; 1+\frac{\Phi_N(x)}{c^2},
       \end{equation}
-      and the residual~\eqref{eq:timedilation}, read under [H-cone] as a proper-time rate, becomes
+      and the residual~\eqref{eq:timedilation}, read as a proper-time rate under [H-cone] and the postulate of
+      Remark~\ref{rem:equiv}, becomes
       \begin{equation}\label{eq:timedilation-weak}
         \frac{d\tau_u}{d\hat\tau}\bigg|_x
         \;\approx\; \Bigl(1+\frac{\Phi_N(x)}{c^2}\Bigr)\,\frac{1}{\gamma},
@@ -537,8 +546,8 @@ $\beta(x,n) + f(x,n) = 1$.
       \begin{equation}\label{eq:eps-newt}
         \epsilon \simeq -\frac{2\Phi_N}{c^2}.
       \end{equation}
-      Combined with~\eqref{eq:timedilation}, both dilations then sit on the same local BI
-      sphere~\eqref{eq:BIlocal}:
+      Combined with~\eqref{eq:timedilation}, both factors then sit on the same local BI
+      sphere~\eqref{eq:BIlocal}; their reading as two dilations requires [H-cone]:
       \begin{equation}\label{eq:two-mobilities}
         |F^\tau(x,n)|
         = \sqrt{1 - \frac{v_{\mathrm{esc}}^2}{c^2}}\;\sqrt{1 - \beta^2},
@@ -569,8 +578,9 @@ $\beta(x,n) + f(x,n) = 1$.
     \end{remark}
 
     \begin{remark}[Status of the weak-field result]\label{rem:status-weak}
-      Corollary~\ref{cor:weakfield} is conditional on one supplied input: the static weak-field Lorentzian
-      metric~\eqref{eq:gtt}, taken from general relativity.
+      Corollary~\ref{cor:weakfield} is conditional on the static weak-field Lorentzian metric~\eqref{eq:gtt},
+      taken from general relativity; its proper-time reading~\eqref{eq:timedilation-weak} also requires [H-cone]
+      and the postulate of Remark~\ref{rem:equiv}.
       It is not derived in the programme: no paper constructs a rank-four Lorentzian co-metric (Q5b-O2), and no
       Lorentzian field equation is derived from the spectral functional of~\cite{Beau2026h}.
       The corollary therefore restates the weak-field lapse in the capacity language; it is not a test of it.
@@ -604,7 +614,10 @@ $\beta(x,n) + f(x,n) = 1$.
         Proved (under [H-L], [U], fibrewise BI lift, supplied co-metric); its reading as a proper-time rate
         is conditional on [H-cone] and the postulate of Remark~\ref{rem:equiv} \\
         Corollary~\ref{cor:weakfield} & $R(x) \approx 1+\Phi_N/c^2$ &
-        Conditional (supplied weak-field metric) \\
+        Conditional (supplied weak-field metric); the proper-time reading also on [H-cone] and
+        Remark~\ref{rem:equiv} \\
+        {[H-cone]} & Cone speed $=$ BI bound per ordering step (\cite{Beau2026tp}) &
+        Hypothesis; the coupling datum of Q11-O1, open \\
         \hline
       \end{tabular}
     \end{center}
@@ -640,8 +653,8 @@ $\beta(x,n) + f(x,n) = 1$.
       spectral operator structure directly.
 
     \paragraph{LC-O2-O2 (Length contraction in the fibrewise regime).}
-      Corollary~\ref{cor:timedil} gives the fibrewise residual, read as time dilation under [H-cone], and the light
-      cone.
+      Corollary~\ref{cor:timedil} gives the fibrewise residual, read as time dilation under [H-cone] and the
+      occupancy--lapse postulate, and the light cone.
       Length contraction in the non-homogeneous setting requires a comparison of
       spatial capacity across different fibres and the reconstruction of effective Lorentz
       transformations between locally inertial observers in the curved geometry.

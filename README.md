@@ -58,7 +58,8 @@ gravitational time dilation formula, which the supplied metric carries, in the c
 
 - Fibrewise map construction: **structural**
 - Fibrewise residual $|F^\tau(x,n)| = R(x)/\gamma$: **proved** under the stated hypotheses; its reading as
-  gravitational time dilation is **conditional** on [H-cone] and on a supplied weak-field Lorentzian metric (no
+  gravitational time dilation is **conditional** on [H-cone], on the occupancy–lapse postulate (Remark 3.2) and on a
+  supplied weak-field Lorentzian metric (no
   paper of the programme derives either)
 - LC-O2-O1 (derivation of $R(x)$ from $\epsilon(x)$ without a supplied metric): **open**.
   The equivalence of the capacity and metric definitions of $R(x)$ (Remark 3.2) is an
