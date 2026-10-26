@@ -4,5 +4,6 @@
   "main_tex": "tex/lc-o2.tex",
   "publication_type": "workingpaper",
   "zenodo_id": 20316528,
-  "doi": "10.5281/zenodo.20316528"
+  "doi": "10.5281/zenodo.20316528",
+  "notes": "Version 1.5 aligns LCII with TempProj 1.5: fibre by fibre, the local Born-Infeld sphere and the filling law fix the values of the fibrewise map at the attained values, the local temporal splitting identifying them as temporal without being used for the uniqueness; the factor sqrt(f(2-f)) is a normalised capacity factor fixed by the Born-Infeld sphere, not a Lorentzian structure. Theorem numbers are unchanged."
 }
