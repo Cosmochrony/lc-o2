@@ -8,7 +8,9 @@ This repository contains the source of the paper
 ## Overview
 
 The paper **TempProj** (`Beau2026tp`) constructs the temporal residual map
-$\mathcal{P}_\tau^{\mathrm{Q5b}}$ in the homogeneous (flat-space) regime and proves uniqueness.
+$\mathcal{P}_\tau^{\mathrm{Q5b}}$ in the homogeneous (flat-space) regime: the quadratic Born-Infeld law and the
+Weil filling law fix its values at the attained values of the total residual, and the temporal splitting of a
+supplied co-metric identifies them as the temporal component of the capacity flow.
 The present paper (LC-O2) extends this construction to **non-homogeneous fibrewise regimes**,
 where a localised spectral occupancy $\epsilon(x)$ reduces the local BI capacity budget.
 
@@ -52,7 +54,9 @@ gravitational time dilation formula, which the supplied metric carries, in the c
   $g^{\tau\tau} = -A_\tau$ it yields $g_{\tau\tau}/g_{\tau\tau}^\infty = 1/(1-\epsilon)$,
   agreeing with $R^2 = 1-\epsilon$ only at $\epsilon = 0$.
 - The factorisation $R(x) \times \sqrt{f(2-f)}$ cleanly separates local physics
-  from the universal normalised Lorentzian structure.
+  from the universal normalised capacity factor of TempProj, fixed by the Born-Infeld sphere and the filling
+  law. It is not a Lorentzian structure: the Lorentzian interval is that of the supplied co-metric, and the
+  kinematic reading also needs [H-cone].
 
 ## Status
 
