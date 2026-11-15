@@ -86,7 +86,7 @@ LorCap → TempProj → LCII
 | Q5b (`Beau2026q5b`) | Effective operator, co-metric, Carnot geometry |
 | Q11 (`Beau2026q11`) | $A_\tau$ free; $g \propto \eta$ after rescaling $\tau$, under the hypotheses of Cor. 6.1 ([H-L], [H-lift], a supplied full-rank extension with [T] and [INV$^+$] of Q8, [ACT$_\tau$] invariance, a negative ordering term) |
 | Gravity/H (`Beau2026h`) | Einstein term on a supplied Riemannian metric; supplies no Lorentzian $g_{\tau\tau}(x)$ |
-| BI (`Beau2026c`) | Born-Infeld admissibility budget |
+| BI (`Beau2026c`) | Capacity bound [A-cap]; the admissibility budget is a hypothesis of LorCap, motivated by [A-cap] |
 | Foundation (`Beau2026m`) | Structural axioms |
 
 ## Repository Contents
